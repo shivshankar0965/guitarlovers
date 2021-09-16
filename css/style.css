@@ -1,0 +1,263 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+:root {
+  --color-heliotrope: #cc66ff;
+  --color-medium-slate-purpule: #6666ff;
+  --color-levender: #aa80ff;
+  --color-white: #ffffff;
+  --color-bg: #eae6ff;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--color-bg);
+    font-family: "Ubuntu", sans-serif;
+}
+#wraper{
+    position: relative;
+}
+#nav-bar{
+    /* background-color: wheat; */
+    height:15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1.5rem 2rem 1.5rem 2rem;
+    color: var(--color-heliotrope);
+}
+img{
+    width: 245px;
+}
+.logo{
+   
+}
+#nav-list{
+    display: flex;
+}
+a,li{
+    text-decoration: none;
+    list-style-type: none;
+    margin-right: 26px;
+    font-weight: bold;
+}
+ul{
+    display: flex;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+#features{
+    margin: 65px 0 0 0;
+}
+#hero{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    text-transform: capitalize;
+}
+#hero form{
+    display: flex;
+    flex-direction: column;
+    margin: 1.2rem auto;
+}
+#hero #email{
+    margin-bottom: 1.2rem;
+    padding: 0.4rem 2.5rem 0.4rem 0.2rem;
+    width: 400px;
+    border-radius: 2.5px;
+    background-color: rgb(223, 219, 224);
+}
+form{
+    display: flex;
+    align-items: center;
+}
+form .btn{
+    background-color: var(--color-medium-slate-purpule);
+    width: 150px;
+    padding: 8px;
+    outline: none;
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.5s;
+    font-weight: bold;
+}
+form .btn:hover{
+    background-color: var(--color-levender);
+    transition: 0.2s;
+    box-shadow: 2px 2px 7px 2px #1A0015;
+}
+section .grid{
+    /* background-color: wheat; */
+    display: flex;
+    flex-direction: row;
+    margin: 1.5rem 10vw;
+    align-items: center;
+    justify-content: center;
+}
+.desc h2{
+    margin-left: 5rem;
+    margin-bottom: 0.5rem;
+}
+.desc p{
+    margin-left: 5rem;
+    width:65vw;
+}
+.icon{
+    color: var(--color-heliotrope);
+}
+#how-it-works{
+    align-self: center;
+    margin:80px 0;
+}
+
+#guitar-1,#guitar-2,#guitar-3{
+    width: 210px;
+    height: 210px;
+}
+#pricing{
+   display: flex;
+   /* background-color: salmon; */
+   justify-content: center;
+   align-items: center;
+   margin: 1.5rem 10vw;
+}
+.products{
+    margin: 0.5rem;
+    border: 1px solid black;
+   
+    align-items: center;
+    text-align: center;
+}
+.level{
+    background-color:var(--color-levender);
+    padding: 10px;
+}
+.products h2{
+    padding: 5px;
+}
+.products .btn{
+    background-color: var(--color-medium-slate-purpule);
+    width: 100px;
+    padding: 4px;
+    margin: 7px 0;
+    outline: none;
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.5s;
+    font-weight: bold;
+}
+.products .btn:hover{
+    background-color: var(--color-levender);
+    transition: 0.2s;
+    box-shadow: 2px 2px 7px 2px #1A0015;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background-color: var(--color-levender);
+    height: 5rem;
+    justify-content: center;
+}
+@media(max-width:650px){
+    #nav-bar{
+        flex-wrap: wrap;
+    }
+
+    .logo{
+        width:100%;
+        margin-top: 10px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-left: 10px;
+        
+    }
+
+
+}
+@media(max-width:650px){
+    img{
+       width: 75vw;
+    }
+        #nav-list{
+        margin-top: 40px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+       padding: 0 20px;
+       
+    }
+    #nav-list li{
+        padding-bottom: 10px;
+        font-weight: bolder;
+    }
+    #nav-list > ul{
+        width: 35vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+    }
+
+}
+@media(max-width:650px){
+    #hero{
+        margin-top: 150px;
+        
+    }
+    #features .icon{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    #guitar-1,#guitar-2,#guitar-3{
+        width: 150px;
+        height: 150px;
+    }
+}
+@media(max-width:550px){
+    .products{
+        
+        flex-direction: column;
+    }
+    #features .icon{
+        display: none;
+    }
+    .desc h2{
+        margin-left: 2.5rem;
+    }
+    .desc p{
+        margin-left: 2.5rem;
+    }
+    #features{
+        margin-top: 8px;
+    }
+    #how-it-works iframe{
+        width: 350px;
+    }
+    #pricing{
+        flex-wrap: wrap;
+    }
+ 
+}
+
+
